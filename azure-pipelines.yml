@@ -13,6 +13,7 @@ trigger:
   displayName: "Use .NET Core sdk 3.1.401"
   inputs:
     version: 3.1.401
+    
 - task: DotNetCoreCLI@2
   displayName: "dotnet test"
   inputs:
