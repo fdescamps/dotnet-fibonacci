@@ -19,7 +19,7 @@ trigger:
   inputs:
     command: test
     projects: "**/*tests.csproj"
-    arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./coverage/opencover.xml  
+    arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=./coverage/opencover.xml'  
 
 - task: DotNetCoreCLI@2
   displayName: Publish
