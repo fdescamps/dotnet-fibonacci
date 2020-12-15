@@ -30,7 +30,7 @@ steps:
   inputs:
     command: publish
     publishWebProjects: True
-    arguments: "--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory) -f net5.0 /p:AssemblyVersion=1.0.0.0"
+    arguments: "--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory) -f net3.1 /p:AssemblyVersion=1.0.0.0"
     zipAfterPublish: True
 
 - task: PublishBuildArtifacts@1
